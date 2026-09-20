@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bonding Parameter & HTL Service Report</title>
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
 
+  <div class="container">
+    <h2>Bonding Parameter Service Report</h2>
+
+    <!-- Autocomplete Search Section -->
+    <div class="form-group">
+      <label>Master Customer:</label>
+      <input type="text" id="customerInput" placeholder="প্রথম ৩ বা শেষ ৩ অক্ষর দিয়ে খুঁজুন (e.g. NAV / AVY)">
+      <ul id="customerList" class="dropdown"></ul>
+    </div>
+
+    <div class="form-group">
+      <label>Vendor Name:</label>
+      <input type="text" id="vendorInput" placeholder="খুঁজুন (e.g. JAY / MILLS)">
+      <ul id="vendorList" class="dropdown"></ul>
+    </div>
+
+    <div class="form-group">
+      <label>Engineer Select:</label>
+      <input type="text" id="engineerInput" placeholder="ইঞ্জিনিয়ারের নাম লিখুন...">
+      <ul id="engineerList" class="dropdown"></ul>
+    </div>
+
+    <div class="form-group">
+      <label>Mobile Number:</label>
+      <input type="text" id="mobileInput" readonly>
+    </div>
+
+    <div class="form-group">
+      <label>Email ID:</label>
+      <input type="text" id="emailInput" readonly>
+    </div>
+  </div>
+
+  <!-- JavaScript Link -->
+  <script src="script.js"></script>
+</body>
+</html>
