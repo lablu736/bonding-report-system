@@ -686,6 +686,28 @@
                             </ul>
                         </div>
                     </div>
+
+
+                    <!-- Manage Customer Database -->
+                    <div class="space-y-4">
+                        <h3 class="font-bold text-sm text-slate-900 border-b pb-2 flex justify-between">
+                            <span>customer Management</span>
+                            <span id="itemCountTag" class="text-xs bg-slate-100 px-2 py-0.5 rounded text-slate-600">0 Items</span>
+                        </h3>
+                        
+                        <div class="flex gap-2">
+                            <input type="text" id="newItemInput" placeholder="যেমন: ON-291351-HTL-HALO-GLB" class="flex-grow p-2 border border-slate-300 rounded text-xs uppercase font-mono font-semibold">
+                            <button onclick="addAdminItem()" class="px-4 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold rounded">Add</button>
+                        </div>
+
+                        <div class="border border-slate-200 rounded-lg max-h-60 overflow-y-auto custom-scrollbar">
+                            <ul id="adminItemList" class="divide-y divide-slate-200 text-xs font-mono">
+                                <!-- Populated dynamically -->
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    
                 </div>
             </div>
         </div>
